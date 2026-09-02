@@ -1,0 +1,47 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="20" y1="16" x2="140" y2="144" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10273E"/>
+      <stop offset="0.55" stop-color="#081A2F"/>
+      <stop offset="1" stop-color="#030B14"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="32" y1="22" x2="120" y2="126" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9E4A8"/>
+      <stop offset="0.2" stop-color="#F5A900"/>
+      <stop offset="0.7" stop-color="#D88900"/>
+      <stop offset="1" stop-color="#B66B00"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(82 76) rotate(90) scale(52)">
+      <stop stop-color="#FFD76A" stop-opacity="0.92"/>
+      <stop offset="0.45" stop-color="#F5A900" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#F5A900" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="80" cy="80" r="68" fill="url(#bgGrad)"/>
+  <circle cx="80" cy="80" r="60" stroke="url(#goldGrad)" stroke-width="3.25" opacity="0.9"/>
+  <circle cx="80" cy="80" r="48" fill="url(#sunGlow)"/>
+
+  <g stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M80 32V106"/>
+    <path d="M52 50H108"/>
+    <path d="M60 48L102 48"/>
+    <path d="M54 42L72 60" opacity="0.6"/>
+    <path d="M106 42L88 60" opacity="0.6"/>
+  </g>
+
+  <g fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M62 46V106"/>
+    <path d="M50 46H90"/>
+    <path d="M95 44V106"/>
+    <path d="M78 64H114"/>
+    <path d="M90 46L118 106"/>
+    <path d="M112 64L134 64" opacity="0.72"/>
+  </g>
+
+  <circle cx="80" cy="80" r="6" fill="#FDE7A8"/>
+  <path d="M80 16V28" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  <path d="M80 144V132" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  <path d="M16 80H28" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  <path d="M144 80H132" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+</svg>
