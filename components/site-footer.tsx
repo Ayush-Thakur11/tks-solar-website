@@ -36,6 +36,7 @@ export function SiteFooter() {
               <li><Link href="/" className="transition-colors hover:text-[#F5A900]">Home</Link></li>
               <li><Link href="/our-work" className="transition-colors hover:text-[#F5A900]">Our Work</Link></li>
               <li><Link href="/about-solar" className="transition-colors hover:text-[#F5A900]">About Solar</Link></li>
+              <li><Link href="/earn-with-solar" className="transition-colors hover:text-[#F5A900]">Earn with Solar</Link></li>
               <li><Link href="/government-schemes" className="transition-colors hover:text-[#F5A900]">Schemes</Link></li>
             </ul>
           </div>

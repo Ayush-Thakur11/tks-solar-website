@@ -2,6 +2,7 @@ export const navItems = [
   { label: "Home", href: "/" },
   { label: "Our Work", href: "/our-work" },
   { label: "About Solar", href: "/about-solar" },
+  { label: "Earn with Solar", href: "/earn-with-solar" },
   { label: "Government Schemes", href: "/government-schemes" },
   { label: "Start Your Project", href: "/start-project" },
 ];

@@ -75,6 +75,12 @@ export default function Home() {
                 >
                   Schemes & Incentives
                 </Link>
+                <Link
+  href="/earn-with-solar"
+  className="btn-secondary flex items-center justify-center px-8 py-4 text-base font-semibold"
+>
+  Earn with Solar
+</Link>
               </div>
             </div>
 

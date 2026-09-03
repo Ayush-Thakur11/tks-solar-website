@@ -7,7 +7,7 @@ import { navItems } from "@/data/site-content";
 function BrandMark() {
   return (
     <img
-      src="/tks-logo.svg"
+      src="/tks-logo.png"
       alt="TKS Solar logo"
       className="h-9 w-9 rounded-full border border-[#F5A900]/60 bg-[#081A2F] object-cover shadow-[0_0_24px_rgba(245,169,0,0.18)]"
     />
@@ -36,13 +36,17 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3 text-white transition-opacity hover:opacity-80">
           <BrandMark />
-          <div>
-            <div className="text-base font-black tracking-wider text-white drop-shadow-[0_0_16px_rgba(245,169,0,0.1)]">TKS</div>
-            <div className="text-[0.6rem] font-bold uppercase tracking-widest text-slate-300">Solar</div>
-          </div>
-        </Link>
+           <div>
+    <div className="text-base font-black tracking-wider text-white">
+      TKS
+    </div>
+    <div className="text-[0.6rem] font-bold uppercase tracking-widest text-slate-300">
+      Solar
+    </div>
+  </div>
+       </Link>
 
-        <nav className="hidden items-center gap-8 text-sm font-medium text-slate-200 md:flex">
+        <nav className="hidden items-center gap-5 text-sm font-medium text-slate-200 lg:flex lg:gap-7">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -54,7 +58,7 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           <Link
             href="/start-project"
             className="btn-primary px-6 py-2.5 text-sm font-semibold"
@@ -67,7 +71,7 @@ export function SiteHeader() {
           type="button"
           aria-label="Toggle mobile navigation"
           onClick={() => setMobileOpen((value) => !value)}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-white transition-all hover:bg-white/8 md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-white transition-all hover:bg-white/8 lg:hidden"
         >
           <span className="sr-only">Open menu</span>
           <span className="flex flex-col gap-1.5">
@@ -79,7 +83,7 @@ export function SiteHeader() {
       </div>
 
       {mobileOpen && (
-        <div className="border-t border-white/8 bg-[#081A2F]/98 backdrop-blur-xl md:hidden">
+        <div className="border-t border-white/8 bg-[#081A2F]/98 backdrop-blur-xl lg:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-6 text-sm font-medium text-slate-200">
             {navItems.map((item) => (
               <Link

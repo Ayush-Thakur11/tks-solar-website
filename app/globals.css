@@ -330,8 +330,48 @@ a {
   color: var(--color-gold);
 }
 
-.text-accent {
-  color: var(--color-gold);
+.gold-highlight {
+  background: linear-gradient(135deg, #f8d36a 0%, #f5a900 48%, #e08a00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold-underline {
+  background-image: linear-gradient(90deg, rgba(245, 169, 0, 0.18), rgba(245, 169, 0, 0.55), rgba(245, 169, 0, 0.18));
+  background-position: 0 88%;
+  background-repeat: no-repeat;
+  background-size: 100% 0.28em;
+}
+
+.energy-flow-line {
+  stroke-dasharray: 8 10;
+  animation: energyDash 2.4s linear infinite;
+}
+
+@keyframes energyDash {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: -72;
+  }
+}
+
+@keyframes energyPulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+.energy-pulse {
+  animation: energyPulse 2.8s ease-in-out infinite;
 }
 
 .text-muted {
