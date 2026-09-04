@@ -51,11 +51,39 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "TKS Solar",
+    legalName: "TKS Works and Supplies Pvt. Ltd.",
+    url: "https://tkssolar.in",
+    logo: "https://tkssolar.in/tks-logo.png",
+    description:
+      "TKS Solar is a solar EPC and electrical infrastructure company delivering residential, commercial, industrial and ground-mounted solar solutions across Himachal Pradesh and North India.",
+    telephone: "+91 98052 52222",
+    email: "tkscompany522@gmail.com",
+    foundingDate: "2018",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Chandigarh",
+      addressCountry: "IN",
+    },
+  };
+
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+      </head>
+
       <body className="min-h-full bg-[#F7F7F4] text-[#081A2F]">
         {children}
       </body>
